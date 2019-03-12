@@ -9,23 +9,22 @@ The reader of the vCD Extension guide must be familiar with:
     * Understand vCD v9.5 and internal working
     * Familiar with Cohesity DataPlatform and DataProtect
 
-vCloud Director: 9.5 or later
-Yarn: 1.1 or later
-Cohesity Data Platform: 4.x
-Web browsers: Latest Mozilla Firefox/ Google Chrome
+Software Required:
 
+    * vCloud Director: 9.5 or later
+    * Yarn: 1.1 or later
+    * Cohesity Data Platform: 4.x
+    * Web browsers: Latest Mozilla Firefox/ Google Chrome
 
 ## Installation Steps
 
 This section describes the detailed steps to install and configure the Cohesity vCD extension on vCD.
 
-====================================
-Install Plugin-Lifecycle Management.
-====================================
+###Install Plugin-Lifecycle Management.
 
 Plugin-Lifecycle management is a tool provided in vCD Developer SDK. It enables to manage the plugin/extension lifecycle i.e. install, enable/disable, remove, list all extensions in vCD.
 
-Steps (Install Plugin Lifecycle Management):
+####Steps (Install Plugin Lifecycle Management):
 
 1) Clone below vCD git repository. 
 
@@ -41,11 +40,11 @@ Steps (Install Plugin Lifecycle Management):
 
 4) Rename "ui_ext_api.ini.template" to "ui_ext_api.ini" and configure below details:
 
-[DEFAULT]
-    vcduri=<vCD IP>
-    username=<admin username>
-    organization=System
-    password=<password>
+    [DEFAULT]
+    * vcduri=<vCD IP>
+    * username=<admin username>
+    * organization=System
+    * password=<password>
 
 5) Run command "yarn" followed by "yarn build" from plugin-lifecycle directory.
 
@@ -53,9 +52,9 @@ Steps (Install Plugin Lifecycle Management):
 
 7) Now "Plugin Lifecycle Management" extension will be visible in provider scope of vCD.
 
-===================================
-Steps (Install Cohesity Extension):
-===================================
+
+####Steps (Install Cohesity Extension):
+
 
 1) Navigate to vCD and login as a provider.
 	
