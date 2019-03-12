@@ -47,7 +47,7 @@ Plugin-Lifecycle management is a tool provided in vCD Developer SDK. It enables 
     * organization=System
     * password=<password>
     ```
-    
+
 5) Run command "yarn" followed by "yarn build" from plugin-lifecycle directory.
 
 6) Run command "yarn deploy" from plugin-lifecycle directory.
@@ -82,9 +82,34 @@ Plugin-Lifecycle management is a tool provided in vCD Developer SDK. It enables 
 ## Features
 
 1) Overview
-2) vApps
+
+    Provides summary of the vcd resources, and the associated cohesity protection status. 
+
+    ![alt-text](/documentation/images/image10.png)
+
+2) Protection for vApps/VMs
+
+    Enables user to protect and Un-protect VMs and vApps. 
+
+    ![alt-text](/documentation/images/image11.png)
+
+    On demand Backups for VMs and vApps.
+
+    ![alt-text](/documentation/images/image12.png)
+
 3) Restore
+
+    Recover File,Folder or VM, from backed up objects. 
+
+    ![alt-text](/documentation/images/image13.png)
+
+    ![alt-text](/documentation/images/image14.png)
+
 4) Monitor
+
+    Monitoring backup and restore events executed from vcd extension.
+
+    ![alt-text](/documentation/images/image15.png)
 
 
 ## Feedback
