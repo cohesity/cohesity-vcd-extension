@@ -70,7 +70,7 @@ Plugin-Lifecycle management is a tool provided in vCD Developer SDK that enables
 
 6) On success, the uploaded extension will be visible under "Data Protection" when you click on the Hamburger Icon.
 
-7) Service Provider must first add Cohesity Cluster configuration from the provider view by clicking on "Data Protection" and also specify the mapping of vCloud tenant to Cohesity organization.
+7) Service Provider must first add Cohesity Cluster configuration from the provider view by clicking on "Data Protection" and also specify the mapping of vCloud tenants to Cohesity organizations.
 
 8) Once this is done, tenants can start using the extension by clicking on "Data Protection" in the tenant view.
 
