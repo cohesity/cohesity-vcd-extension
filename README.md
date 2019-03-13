@@ -6,10 +6,10 @@ Cohesity Extension for vCloud Director enables Managed Service Providers to offe
 
 Software Required:
 
-    * vCloud Director: 9.5 or later
-    * Cohesity Data Platform: 6.2 or later
-    * Web browsers: Firefox, Google Chrome
-    * Yarn: 1.1 or later (To install Plugin Lifecycle Management)
+* vCloud Director: 9.5 or later
+* Cohesity Data Platform: 6.2 or later
+* Web browsers: Firefox, Google Chrome
+* Yarn: 1.1 or later (To install Plugin Lifecycle Management)
 
 ## Installation Steps
 
