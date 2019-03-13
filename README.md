@@ -8,7 +8,7 @@ Software Required:
 
 * vCloud Director: 9.5 or later
 * Cohesity Data Platform: 6.2 or later
-* Web browsers: Firefox, Google Chrome
+* Web browsers: Firefox, Google Chrome, Safari
 * Yarn: 1.1 or later (To install Plugin Lifecycle Management)
 
 ## Installation Steps
