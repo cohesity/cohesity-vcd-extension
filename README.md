@@ -60,7 +60,7 @@ Plugin-Lifecycle management is a tool provided in vCD Developer SDK that enables
 
     ![alt-text](/documentation/images/image7.png)
 
-4) Click on “Select zip To Upload” and Navigate to the plugin.zip file for cohesity extension.
+4) Click on “Select zip To Upload” and Navigate to the `cohesity_vcd_extension_{version}.zip` file for cohesity extension.
 
     ![alt-text](/documentation/images/image8.png)
 
