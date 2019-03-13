@@ -94,19 +94,19 @@ iris_cli cluster start service-names=iris
 
 1) Overview
 
-    Provides summary of the vcd resources, and the associated cohesity protection status. 
+    Provides summary of the vCD resources and the associated cohesity protection status. 
 
     ![alt-text](/documentation/images/image10.png)
 
 2) Protection for vApps/VMs
-    * Enables user to protect and Un-protect VMs and vApps
-    * On demand Backups for VMs and vApps.
+    * Protect and unprotect VMs and vApps
+    * On-demand backups for VMs and vApps.
 
 3) Restore
     * Recover files, folders or VM from backed up objects
 
 4) Monitor
-    * Monitoring backup and restore events executed from vcd extension.
+    * Monitoring backup and restore tasks executed from vCD extension.
 
 
 ## Feedback
