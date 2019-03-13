@@ -106,10 +106,7 @@ iris_cli cluster start service-names=iris
     * Recover files, folders or VM from backed up objects
 
 4) Monitor
-
-    Monitoring backup and restore events executed from vcd extension.
-
-    ![alt-text](/documentation/images/image15.png)
+    * Monitoring backup and restore events executed from vcd extension.
 
 
 ## Feedback
