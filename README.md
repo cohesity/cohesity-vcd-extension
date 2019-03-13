@@ -1,44 +1,35 @@
 # Cohesity Extension for vCloud Director
 
-This extension integrates with vCloud Director HTML5 UI and enables multi-tenant self-service operations using Cohesity REST API.
+Cohesity Extension for vCloud Director enables Managed Service Providers to offer data protection as a self-service in multi-tenant environments.
 
 ## Prerequisites
-
-The reader of the vCD Extension guide must be familiar with:
-
-    * Understand vCD v9.5 and its internal workings.
-    * Cohesity Data-Platform and Data-Protection.
 
 Software Required:
 
     * vCloud Director: 9.5 or later
-    * Yarn: 1.1 or later
-    * Cohesity Data Platform: 4.x
-    * Web browsers: Latest Mozilla Firefox/ Google Chrome
+    * Cohesity Data Platform: 6.2 or later
+    * Web browsers: Firefox, Google Chrome
+    * Yarn: 1.1 or later (To install Plugin Lifecycle Management)
 
 ## Installation Steps
 
-This section describes the detailed steps to install and configure the Cohesity vCD extension on vCD.
+This section describes the detailed steps to install and configure the Cohesity Extension for vCloud Director.
 
-### Install Plugin-Lifecycle Management.
+### Install VMware's Plugin-Lifecycle Management extension
 
-Plugin-Lifecycle management is a tool provided in vCD Developer SDK. It enables to manage the plugin/extension lifecycle i.e. install, enable/disable, remove, list all extensions in vCD.
+Plugin-Lifecycle management is a tool provided in vCD Developer SDK that enables managing the plugin/extension lifecycle i.e. install, enable/disable, remove, list all extensions in vCD.
 
 #### Steps (Install Plugin Lifecycle Management):
 
-1) Clone below vCD git repository. 
+1) Clone vCD git repository. 
 
     https://github.com/vmware/vcd-ext-sdk.git
 
-2) Follow the instructions to build.
-
-    https://github.com/vmware/vcd-ext-sdk/blob/master/.travis.yml
-
-3) Navigate to local repository where below extension is cloned.
+2) Navigate to local repository where below extension is cloned.
 
     https://github.com/vmware/vcd-ext-sdk/tree/master/ui/plugin-lifecycle
 
-4) Rename "ui_ext_api.ini.template" to "ui_ext_api.ini" and configure below details:
+3) Rename "ui_ext_api.ini.template" to "ui_ext_api.ini" and configure below details:
 
     ```
     [DEFAULT]
@@ -48,14 +39,14 @@ Plugin-Lifecycle management is a tool provided in vCD Developer SDK. It enables 
     * password=<password>
     ```
 
-5) Run command "yarn" followed by "yarn build" from plugin-lifecycle directory.
+4) Run command "yarn" followed by "yarn build" from plugin-lifecycle directory.
 
-6) Run command "yarn deploy" from plugin-lifecycle directory.
+5) Run command "yarn deploy" from plugin-lifecycle directory.
 
-7) Now "Plugin Lifecycle Management" extension will be visible in provider scope of vCD.
+6) Now "Plugin Lifecycle Management" extension will be visible in provider scope of vCD.
 
 
-#### Steps (Install Cohesity Extension):
+### Install Cohesity Extension:
 
 1) Navigate to vCD and login as a provider.
 	
@@ -88,22 +79,11 @@ Plugin-Lifecycle management is a tool provided in vCD Developer SDK. It enables 
     ![alt-text](/documentation/images/image10.png)
 
 2) Protection for vApps/VMs
-
-    Enables user to protect and Un-protect VMs and vApps. 
-
-    ![alt-text](/documentation/images/image11.png)
-
-    On demand Backups for VMs and vApps.
-
-    ![alt-text](/documentation/images/image12.png)
+    * Enables user to protect and Un-protect VMs and vApps
+    * On demand Backups for VMs and vApps.
 
 3) Restore
-
-    Recover File,Folder or VM, from backed up objects. 
-
-    ![alt-text](/documentation/images/image13.png)
-
-    ![alt-text](/documentation/images/image14.png)
+    * Recover files, folders or VM from backed up objects
 
 4) Monitor
 
@@ -113,4 +93,4 @@ Plugin-Lifecycle management is a tool provided in vCD Developer SDK. It enables 
 
 
 ## Feedback
-Please send your feedback and suggestions to cohesity-api-sdks@cohesity.com
+We love to hear from you. Please send your feedback and suggestions to cohesity-api-sdks@cohesity.com
