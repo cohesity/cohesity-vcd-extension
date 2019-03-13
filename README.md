@@ -1,6 +1,6 @@
 # Cohesity Extension for vCloud Director
 
-Cohesity Extension for vCloud Director enables Managed Service Providers to offer data protection as a self-service in multi-tenant environments.
+Cohesity Extension for vCloud Director enables Managed Service Providers to offer data protection as a self-service in multi-tenant environments. This extension integrates natively with vCloud Director HTML UI and makes self-service data protection operations available at your fingertips. It delivers self-service to multiple tenants in a secure manner through role based access control.
 
 ## Prerequisites
 
