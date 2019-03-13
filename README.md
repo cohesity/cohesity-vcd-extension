@@ -29,7 +29,7 @@ Plugin-Lifecycle management is a tool provided in vCD Developer SDK that enables
 
     https://github.com/vmware/vcd-ext-sdk/tree/master/ui/plugin-lifecycle
 
-3) Rename "ui_ext_api.ini.template" to "ui_ext_api.ini" and configure below details:
+3) Rename `ui_ext_api.ini.template` to `ui_ext_api.ini` and configure below details:
 
     ```
     [DEFAULT]
@@ -39,9 +39,9 @@ Plugin-Lifecycle management is a tool provided in vCD Developer SDK that enables
     * password=<password>
     ```
 
-4) Run command "yarn" followed by "yarn build" from plugin-lifecycle directory.
+4) Run command `yarn` followed by `yarn build` from `plugin-lifecycle` directory.
 
-5) Run command "yarn deploy" from plugin-lifecycle directory.
+5) Run command `yarn deploy` from `plugin-lifecycle` directory.
 
 6) Now "Plugin Lifecycle Management" extension will be visible in provider scope of vCD.
 
