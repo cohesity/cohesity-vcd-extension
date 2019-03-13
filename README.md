@@ -46,6 +46,21 @@ Plugin-Lifecycle management is a tool provided in vCD Developer SDK that enables
 6) Now "Plugin Lifecycle Management" extension will be visible in provider scope of vCD.
 
 
+### Enable CORS on the Cohesity Cluster
+vCloud Director extension makes cross-origin API requests to the Cohesity Cluster.
+To enable support for CORS on the Cohesity Cluster, please follow the steps below.
+
+1) Connect using ssh to the Cohesity Cluster
+2) Replace `vcd-hostname` with the hostname of your vCloud Director server in the command below and run it on the Cohesity shell to enable CORS
+```
+iris_cli cluster update-gflag gflag-name="iris_cors_origins" gflag-value="https://{vcd-hostname}" service-name=iris reason="Enabling CORS"
+```
+3) Restart service
+```
+iris_cli cluster stop service-names=iris
+iris_cli cluster start service-names=iris
+```
+
 ### Install Cohesity Extension:
 
 1) Navigate to vCD and login as a provider.
