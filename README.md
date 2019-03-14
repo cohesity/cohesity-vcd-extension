@@ -96,10 +96,7 @@ iris_cli cluster start service-names=iris
 ## Features
 
 1) Overview
-
-    Provides summary of the vCD resources and the associated cohesity protection status. 
-
-    ![alt-text](/documentation/images/image10.png)
+    * Provides summary of the vCD resources and the associated cohesity protection status. 
 
 2) Protection for vApps/VMs
     * Protect and unprotect VMs and vApps
