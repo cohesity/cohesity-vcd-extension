@@ -1,6 +1,6 @@
 # Cohesity Extension for VMware vCloud Director
 
-Cohesity Extension for vCloud Director enables Managed Service Providers to offer data protection as a self-service in multi-tenant environments. This extension integrates natively with vCloud Director HTML UI and makes self-service data protection operations available at your fingertips. It delivers self-service to multiple tenants in a secure manner through role based access control.
+Cohesity Extension for VMware vCloud Director enables cloud providers to offer data protection as a service in multi-tenant environments. This extension integrates natively with vCloud Director HTML UI and makes self-service data protection  available to tenants. It delivers self-service in a secure manner through role-based access control. Having integrated data protection services not only streamlines operations but also provides rich tenant experience, allowing cloud providers to monetize services.
 
 ## Prerequisites
 
@@ -12,11 +12,11 @@ Software Required:
 * Yarn: 1.1 or later (To install Plugin Lifecycle Management)
 
 ## Download
-Please [click here](https://github.com/cohesity/cohesity-vcd-extension/releases/latest) to download Cohesity Extension for vCloud Director.
+Please [click here](https://github.com/cohesity/cohesity-vcd-extension/releases/latest) to download Cohesity Extension for VMware vCloud Director.
 
 ## Installation Steps
 
-This section describes the detailed steps to install and configure the Cohesity Extension for vCloud Director.
+This section describes the detailed steps to install and configure the Cohesity Extension for VMware vCloud Director.
 
 ### Install VMware's Plugin-Lifecycle Management extension
 
