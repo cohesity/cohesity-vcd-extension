@@ -11,6 +11,9 @@ Software Required:
 * Web browsers: Firefox, Google Chrome, Safari
 * Yarn: 1.1 or later (To install Plugin Lifecycle Management)
 
+## Download
+Please [click here](https://github.com/cohesity/cohesity-vcd-extension/releases/latest) to download Cohesity Extension for vCloud Director.
+
 ## Installation Steps
 
 This section describes the detailed steps to install and configure the Cohesity Extension for vCloud Director.
