@@ -1,6 +1,8 @@
 # Cohesity Extension for VMware vCloud Director
 
-Cohesity Extension for vCloud Director enables Managed Service Providers to offer data protection as a self-service in multi-tenant environments. This extension integrates natively with vCloud Director HTML UI and makes self-service data protection operations available at your fingertips. It delivers self-service to multiple tenants in a secure manner through role based access control.
+Cohesity Extension for VMware vCloud Director enables cloud providers to offer data protection as a service in multi-tenant environments.
+
+This extension integrates natively with vCloud Director HTML UI and makes self-service data protection  available to tenants. It delivers self-service in a secure manner through role-based access control. Having integrated data protection services streamlines operations as well as provides a rich tenant experience.
 
 ## Prerequisites
 
@@ -8,102 +10,83 @@ Software Required:
 
 * vCloud Director: 9.5 or later
 * Cohesity Data Platform: 6.2 or later
-* Web browsers: Firefox, Google Chrome, Safari
-* Yarn: 1.1 or later (To install Plugin Lifecycle Management)
+* Web browsers: Google Chrome, Firefox, Safari
+* Python 2.7 or higher (to deploy plugin)
+* Python modules: requests, configparser
 
 ## Installation Steps
 
-This section describes the detailed steps to install and configure the Cohesity Extension for vCloud Director.
+This section describes the detailed steps to install and configure the Cohesity Extension for VMware vCloud Director.
 
-### Install VMware's Plugin-Lifecycle Management extension
-
-Plugin-Lifecycle management is a tool provided in vCD Developer SDK that enables managing the plugin/extension lifecycle i.e. install, enable/disable, remove, list all extensions in vCD.
-
-#### Steps (Install Plugin Lifecycle Management):
-
-1) Clone vCD git repository. 
-
-    https://github.com/vmware/vcd-ext-sdk.git
-
-2) Navigate to local repository where below extension is cloned.
-
-    https://github.com/vmware/vcd-ext-sdk/tree/master/ui/plugin-lifecycle
-
-3) Rename `ui_ext_api.ini.template` to `ui_ext_api.ini` and configure below details:
-
-    ```
-    [DEFAULT]
-    * vcduri=<vCD IP>
-    * username=<admin username>
-    * organization=System
-    * password=<password>
-    ```
-
-4) Run command `yarn` followed by `yarn build` from `plugin-lifecycle` directory.
-
-5) Run command `yarn deploy` from `plugin-lifecycle` directory.
-
-6) Now "Plugin Lifecycle Management" extension will be visible in provider scope of vCD.
-
-
-### Enable CORS on the Cohesity Cluster
+### 1. Enable CORS on the Cohesity Cluster
 vCloud Director extension makes cross-origin API requests to the Cohesity Cluster.
 To enable support for CORS on the Cohesity Cluster, please follow the steps below.
 
-1) Connect using ssh to the Cohesity Cluster
-2) Replace `vcd-hostname` with the hostname of your vCloud Director server in the command below and run it on the Cohesity shell to enable CORS
+1) Open the Cohesity Cluster UI and click on the "Download CLI" link in the footer. Download the `iris_cli` binary and make sure it has executable permissions.
+2) Connect to the Cohesity Cluster using `iris_cli`
 ```
-iris_cli cluster update-gflag gflag-name="iris_cors_origins" gflag-value="https://{vcd-hostname}" service-name=iris reason="Enabling CORS"
+iris_cli -server {cohesity_cluster} -username {username} -password {password}
 ```
-3) Restart service
+3) Once you are connected and in the shell, replace `vcd_hostname` with the hostname of your vCloud Director server in the command below and run it in the shell to enable CORS
 ```
-iris_cli cluster stop service-names=iris
-iris_cli cluster start service-names=iris
+cluster update-gflag gflag-name="iris_cors_origins" gflag-value="https://{vcd_hostname}" service-name=iris reason="Enabling_CORS"
+```
+4) Restart `iris` service by running the command below in the shell
+```
+cluster restart service-names=iris
+```
+5) Exit the shell
+```
+exit
 ```
 
-### Install Cohesity Extension:
+### 2. Enable organizations on the Cohesity Cluster
+To enable organizations on the Cohesity Cluster please follow the steps below:
 
-1) Navigate to vCD and login as a provider.
-	
-    ![alt-text](/documentation/images/image5.png)
+1) Login to the Cohesity Cluster UI as a user with Admin role
+2) Click on "Admin->Cluster Settings"
+3) Click on the toggle buton to "Enable Organizations"
+4) Create organizations in Cohesity corresponding to the tenants in vCloud Director by navigating to "Admin->Organizations" and clicking on "Add Organization"
+5) Assign the Protection Policies to the organization and also assign the corresponding vCD organization under Sources
 
-2) Click on hamburger icon and select "Plugin Lifecycle Management"
 
-    ![alt-text](/documentation/images/image6.png)
+### 3. Install Cohesity Extension:
 
-3) Click on upload.
+1) Download the latest `dataProtection.zip` file from the [releases](https://github.com/cohesity/cohesity-vcd-extension/releases) page.
 
-    ![alt-text](/documentation/images/image7.png)
+2) Extract the contents of this zip to a directory called `dataProtection` and change directory to this directory.
+```
+unzip dataProtection.zip
+cd dataProtection
+```
 
-4) Click on “Select zip To Upload” and Navigate to the `cohesity_vcd_extension_{version}.zip` file for cohesity extension.
+3) Update your vCD details in the `ui_ext_api.ini` file
 
-    ![alt-text](/documentation/images/image8.png)
+4) Run the command below to deploy the plugin
+```
+python deploy.py deploy
+```
 
-5) Follow the instructions on screen to upload the plugin.
+5) On success, the uploaded extension will be visible under "Data Protection" when you click on the Hamburger Icon in vCD HTML5 UI.
 
-    ![alt-text](/documentation/images/image9.png)
+6) Service Provider must first add Cohesity Cluster configuration from the provider view by clicking on "Data Protection" and also specify the mapping of vCloud organizations to Cohesity organizations.
 
-6) On success, the uploaded extension will be visible under "Data Protection" when you click on the Hamburger Icon.
+Please note that prior to this "Enable Organizations" setting must be enabled on the Cohesity Cluster and organizations must be present on the Cluster for the mapping to succeed.
 
-7) Service Provider must first add Cohesity Cluster configuration from the provider view by clicking on "Data Protection" and also specify the mapping of vCloud tenants to Cohesity organizations.
-
-8) Once this is done, tenants can start using the extension by clicking on "Data Protection" in the tenant view.
+7) Once this is done, tenants can start using the extension by clicking on "Data Protection" in the tenant view.
 
 
 ## Features
 
 1) Overview
-
-    Provides summary of the vCD resources and the associated cohesity protection status. 
-
-    ![alt-text](/documentation/images/image10.png)
+    * Provides summary of the vCD resources and the associated cohesity protection status. 
 
 2) Protection for vApps/VMs
     * Protect and unprotect VMs and vApps
     * On-demand backups for VMs and vApps.
 
 3) Restore
-    * Recover files, folders or VM from backed up objects
+    * Recover files, folders or VM/vApp from backed up objects
 
 4) Monitor
     * Monitoring backup and restore tasks executed from vCD extension.
