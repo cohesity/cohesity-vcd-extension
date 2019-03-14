@@ -103,7 +103,7 @@ iris_cli cluster start service-names=iris
     * On-demand backups for VMs and vApps.
 
 3) Restore
-    * Recover files, folders or VM from backed up objects
+    * Recover files, folders or VM/vApp from backed up objects
 
 4) Monitor
     * Monitoring backup and restore tasks executed from vCD extension.
