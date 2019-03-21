@@ -56,7 +56,7 @@ To enable support for CORS on the Cohesity Cluster, please follow the steps belo
 1) Connect using ssh to the Cohesity Cluster
 2) Replace `vcd-hostname` with the hostname of your vCloud Director server in the command below and run it on the Cohesity shell to enable CORS
 ```
-iris_cli cluster update-gflag gflag-name="iris_cors_origins" gflag-value="https://{vcd-hostname}" service-name=iris reason="Enabling CORS"
+iris_cli cluster update-gflag gflag-name="iris_cors_origins" gflag-value="https://{vcd-hostname}" service-name=iris reason="Enabling_CORS"
 ```
 3) Restart service
 ```
