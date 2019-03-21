@@ -60,8 +60,7 @@ iris_cli cluster update-gflag gflag-name="iris_cors_origins" gflag-value="https:
 ```
 3) Restart service
 ```
-iris_cli cluster stop service-names=iris
-iris_cli cluster start service-names=iris
+iris_cli cluster restart service-names=iris
 ```
 
 ### Install Cohesity Extension:
