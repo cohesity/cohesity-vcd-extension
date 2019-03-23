@@ -26,11 +26,11 @@ Plugin-Lifecycle management is a tool provided in vCD Developer SDK that enables
 
 1) Clone vCD git repository. 
 
-    https://github.com/vmware/vcd-ext-sdk.git
+    `git clone https://github.com/vmware/vcd-ext-sdk.git`
 
-2) Navigate to local repository where below extension is cloned.
+2) Navigate to local cloned repository and change directory to `vcd-ext-sdk/ui/plugin-lifecycle`
 
-    https://github.com/vmware/vcd-ext-sdk/tree/master/ui/plugin-lifecycle
+    `cd vcd-ext-sdk/ui/plugin-lifecycle`
 
 3) Rename `ui_ext_api.ini.template` to `ui_ext_api.ini` and configure below details:
 
