@@ -42,11 +42,14 @@ Plugin-Lifecycle management is a tool provided in vCD Developer SDK that enables
     * password=<password>
     ```
 
-4) Run command `yarn` followed by `yarn build` from `plugin-lifecycle` directory.
+4) Run the following commands from `plugin-lifecycle` directory.
+```
+yarn
+yarn build
+yarn deploy
+```
 
-5) Run command `yarn deploy` from `plugin-lifecycle` directory.
-
-6) Now "Plugin Lifecycle Management" extension will be visible in provider scope of vCD.
+5) Now "Plugin Lifecycle Management" extension will be visible in provider scope of vCD.
 
 
 ### Enable CORS on the Cohesity Cluster
