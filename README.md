@@ -56,14 +56,18 @@ yarn deploy
 vCloud Director extension makes cross-origin API requests to the Cohesity Cluster.
 To enable support for CORS on the Cohesity Cluster, please follow the steps below.
 
-1) Connect using ssh to the Cohesity Cluster
-2) Replace `vcd-hostname` with the hostname of your vCloud Director server in the command below and run it on the Cohesity shell to enable CORS
+1) Open the Cohesity Cluster UI and click on the "Download CLI" link in the footer. Download the `iris_cli` binary and make sure it has executable permissions.
+2) Connect to the Cohesity Cluster using `iris_cli`
 ```
-iris_cli cluster update-gflag gflag-name="iris_cors_origins" gflag-value="https://{vcd-hostname}" service-name=iris reason="Enabling_CORS"
+iris_cli -server {cohesity_cluster}
 ```
-3) Restart service
+3) Once you are connected and in the shell, replace `vcd_hostname` with the hostname of your vCloud Director server in the command below and run it in the shell to enable CORS
 ```
-iris_cli cluster restart service-names=iris
+cluster update-gflag gflag-name="iris_cors_origins" gflag-value="https://{vcd_hostname}" service-name=iris reason="Enabling_CORS"
+```
+3) Restart `iris` service by running the command below in the shell
+```
+cluster restart service-names=iris
 ```
 
 ### Install Cohesity Extension:
