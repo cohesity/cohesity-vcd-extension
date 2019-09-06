@@ -12,7 +12,7 @@ Software Required:
 * Cohesity Data Platform: 6.2 or later
 * Web browsers: Google Chrome, Firefox, Safari
 * Python 2.7 or higher (to deploy plugin)
-* Python modules: requests, configparser
+   * Python modules: requests, configparser
 
 ## Installation Steps
 
@@ -78,11 +78,33 @@ Please note that prior to this "Enable Organizations" setting must be enabled on
 
 7) Once this is done, tenants can start using the extension by clicking on "Data Protection" in the tenant view.
 
+### 4. Upgrade Cohesity Extension:
+1) Download the latest `dataProtection.zip` file from the [releases](https://github.com/cohesity/cohesity-vcd-extension/releases) page.
+
+2) Extract the contents of this zip to a directory called `dataProtection` and change directory to this directory.
+```
+unzip dataProtection.zip
+cd dataProtection
+```
+
+3) Update your vCD details in the `ui_ext_api.ini` file
+
+4) Run the command below to remove previous version of the plugin
+```
+python deploy.py remove
+
+```
+5) Run the command below to deploy the new version of the plugin
+```
+python deploy.py deploy
+```
+
+6) On success, the uploaded new version of extension will be visible under "Data Protection" when you click on the Hamburger Icon in vCD HTML5 UI.
 
 ## Features
 
 1) Overview
-    * Provides summary of the vCD resources and the associated cohesity protection status. 
+    * Provides dashboard summary of the vCD resources and the associated cohesity protection status. 
 
 2) Protection for vApps/VMs
     * Protect and unprotect VMs and vApps
