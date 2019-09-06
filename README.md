@@ -30,6 +30,7 @@ iris_cli -server {cohesity_cluster} -username {username} -password {password}
 3) Once you are connected and in the shell, replace `vcd_hostname` with the hostname of your vCloud Director server in the command below and run it in the shell to enable CORS
 ```
 cluster update-gflag gflag-name="iris_cors_origins" gflag-value="https://{vcd_hostname}" service-name=iris reason="Enabling_CORS"
+cluster update-gflag gflag-name="iris_alllowed_referrer_urls" gflag-value="https://{vcd_hostname}" service-name=iris reason="Enabling_Referer_Url"
 ```
 4) Restart `iris` service by running the command below in the shell
 ```
