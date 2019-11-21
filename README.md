@@ -23,7 +23,6 @@ This extension integrates natively with vCloud Director HTML UI and makes self-s
 | ------------- | ------------- | ------------- |
 | View Organizations  | Y  | Y |
 | View Group / User | Y  | Y |
-| View Organizations | Y | Y |
 | View Tenant Portal Plugin Information | Y | Y |
 | Edit Organization Properties| N | Y |
 
