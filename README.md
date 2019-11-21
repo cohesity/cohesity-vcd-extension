@@ -1,3 +1,4 @@
+
 # Cohesity Extension for VMware vCloud Director
 
 Cohesity Extension for VMware vCloud Director enables cloud providers to offer data protection as a service in multi-tenant environments.
@@ -6,13 +7,25 @@ This extension integrates natively with vCloud Director HTML UI and makes self-s
 
 ## Prerequisites
 
-Software Required:
+**Software Required:**
 
 * vCloud Director: 9.5 or later
 * Cohesity Data Platform: 6.2 or later
 * Web browsers: Google Chrome, Firefox, Safari
 * Python 2.7 or higher (to deploy plugin)
    * Python modules: requests, configparser
+* Cohesity cluster should be accessible through port 443
+* Signed Certificate should be installed on the Cohesity Cluster
+
+**vCD mandatory user permissions:**
+
+| Permission  | View Access | Manage Access |
+| ------------- | ------------- | ------------- |
+| View Organizations  | Y  | Y |
+| View Group / User | Y  | Y |
+| View Organizations | Y | Y |
+| View Tenant Portal Plugin Information | Y | Y |
+| Edit Organization Properties| N | Y |
 
 ## Installation Steps
 
