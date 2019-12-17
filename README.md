@@ -113,6 +113,9 @@ python deploy.py deploy
 
 6) On success, the uploaded new version of extension will be visible under "Data Protection" when you click on the Hamburger Icon in vCD HTML5 UI.
 
+**Note:** The 'Data Protection' menu item in vCD HTML5 UI will only be visible to the vCD tenants which are mapped to some Cohesity cluster.
+
+
 ## Features
 
 1) Overview
