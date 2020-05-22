@@ -1,11 +1,23 @@
+Cohesity Extension for VMware vCloud Director
+=================
 
-# Cohesity Extension for VMware vCloud Director
+## Overview
 
-Cohesity Extension for VMware vCloud Director enables cloud providers to offer data protection as a service in multi-tenant environments.
+*Cohesity Extension for VMware vCloud Director* enables cloud providers to offer data protection as a service in multi-tenant environments.
 
 This extension integrates natively with vCloud Director HTML UI and makes self-service data protection  available to tenants. It delivers self-service in a secure manner through role-based access control. Having integrated data protection services streamlines operations as well as provides a rich tenant experience.
 
-## Prerequisites
+## Table of contents :scroll:
+
+ - [Prerequisites](#pre-req)
+ - [Installation](#install)
+ - [Features](#features)
+ - [VCD Tutorial](#demo-video)
+ - [How can you contribute](#contribute)
+ - [Suggestions and Feedback](#suggest)
+ 
+
+## <a name="pre-req"></a> Prerequisites :clipboard:
 
 **Software Required:**
 
@@ -26,7 +38,7 @@ This extension integrates natively with vCloud Director HTML UI and makes self-s
 | View Tenant Portal Plugin Information | Y | Y |
 | Edit Organization Properties| N | Y |
 
-## Installation Steps
+## <a name="install"></a> Installation :hammer_and_pick:
 
 This section describes the detailed steps to install and configure the Cohesity Extension for VMware vCloud Director.
 
@@ -116,7 +128,7 @@ python deploy.py deploy
 **Note:** The 'Data Protection' menu item in vCD HTML5 UI will only be visible to the vCD tenants which are mapped to some Cohesity cluster.
 
 
-## Features
+## <a name="features"></a> Features: :bulb:
 
 1) Overview
     * Provides dashboard summary of the vCD resources and the associated cohesity protection status. 
@@ -131,6 +143,16 @@ python deploy.py deploy
 4) Monitor
     * Monitoring backup and restore tasks executed from vCD extension.
 
+## <a name="contribute"></a> Tutorial Video :movie_camera:
 
-## Feedback
-We love to hear from you. Please send your feedback and suggestions to cohesity-api-sdks@cohesity.com
+* <a href="https://www.youtube.com/watch?v=dhaHRrXg4tM">VCD Tutorial </a>
+
+## <a name="contribute"></a> Contribute :handshake:
+
+* [Refer our contribution guideline](./CONTRIBUTING.md).
+
+
+## <a name ="suggest"></a> Questions or Feedback :raised_hand:
+
+We would love to hear from you. Please send your questions and feedback to: *cohesity-api-sdks@cohesity.com*
+
