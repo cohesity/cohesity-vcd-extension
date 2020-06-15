@@ -22,10 +22,10 @@ This extension integrates natively with vCloud Director HTML UI and makes self-s
 **Software Required:**
 
 * vCloud Director: 9.5 or later
-* Cohesity Data Platform: 6.2 or later
+* Cohesity Data Platform: 6.3 or later
 * Web browsers: Google Chrome, Firefox, Safari
-* Python 2.7 or higher (to deploy plugin)
-   * Python modules: requests, configparser
+* Python 3 or higher (to deploy plugin)
+   * Python modules required: requests, configparser
 * Cohesity cluster should be accessible through port 443
 * Signed Certificate should be installed on the Cohesity Cluster
 
