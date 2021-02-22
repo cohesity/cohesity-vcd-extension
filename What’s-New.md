@@ -1,0 +1,16 @@
+| Release Version                                                                  	| Updates                                                                                                           	| Document Revision 	|
+|----------------------------------------------------------------------------------	|-------------------------------------------------------------------------------------------------------------------	|-------------------	|
+| [v1.7.5](https://github.com/cohesity/cohesity-vcd-extension/releases/tag/v1.7.5) 	| Support for vCD 10.2	|      	|
+| [v1.7.4](https://github.com/cohesity/cohesity-vcd-extension/releases/tag/v1.7.4) 	| Qualified CS v6.5.x for all available workflows.	|      	|
+| [v1.7.3](https://github.com/cohesity/cohesity-vcd-extension/releases/tag/v1.7.3) 	| Supports recovery of VMs, vApps, files/folder from archive targets	|      	|
+| [v1.7.2](https://github.com/cohesity/cohesity-vcd-extension/releases/tag/v1.7.2) 	| Qualified CS v6.5.1b for all available workflows.                          	|      	|
+| [v1.7.1](https://github.com/cohesity/cohesity-vcd-extension/releases/tag/v1.7.1) 	| Allow backup & recovery of vApp templates                         	|      	|
+|                                                                                  	| UI Fixes for vCD 10.1                                                                        	|                   	|
+| [v1.6.1](https://github.com/cohesity/cohesity-vcd-extension/releases/tag/v1.6.1) 	| [Bug] Fixed issue with the discovery of standalone VMs in the extension.                          	|      	|
+| [v1.6.0](https://github.com/cohesity/cohesity-vcd-extension/releases/tag/v1.6.0) 	| Allow tenant users to cross launch to Cohesity UI and access advanced options/workflows.                          	|      	|
+| [v1.5.2](https://github.com/cohesity/cohesity-vcd-extension/releases/tag/v1.5.2) 	| Includes all default replication and archival targets as per policy during manual backup                          	| Initial Draft     	|
+|                                                                                  	| Rename protection job to protection group.                                                                        	|                   	|
+| [v1.5.0](https://github.com/cohesity/cohesity-vcd-extension/releases/tag/v1.5.0) 	| Support for recovery of virtual machines to alternate locations.                                                  	|                   	|
+|                                                                                  	| Allow users to choose from storage profile rather than the vCenter datastores on recovery to alternate locations. 	|                   	|
+| [v1.4.0](https://github.com/cohesity/cohesity-vcd-extension/releases/tag/v1.4.0) 	| Support for recovering files and folders using VMware Tools or installed Cohesity Agent (Windows/Linux VMs)       	|                   	|
+|                                                                                  	| Fixed compatibility issue with vCD 10.1                                                                           	|                   	|
