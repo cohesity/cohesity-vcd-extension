@@ -1,0 +1,1 @@
+The process to upgrade the vCD extension is similar to the plugin installation. Navigate to the [Release section](https://github.com/cohesity/cohesity-vcd-extension/releases) in Github, and check for dataProtection.zip file. Follow the steps as mentioned in [Plugin Installation](https://github.com/cohesity/cohesity-vcd-extension/wiki/Installation). 
