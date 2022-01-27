@@ -10,9 +10,11 @@ This extension integrates natively with vCloud Director HTML UI and makes self-s
 ## Table of contents :scroll:
 
  - [Prerequisites](https://docs.cohesity.com/api/integrations/vcd/prereq-vcd.htm)
- - [Installation](https://docs.cohesity.com/api/integrations/vcd/plugin-install.htm?tocpath=Cohesity%20Plugin%20for%20VMware%20Cloud%20Director%7CInstall%20and%20Upgrade%7C_____3)
+ - [Compatibility Matrix](https://docs.cohesity.com/api/integrations/vcd/compatibility-matrix.htm)
+ - [Download](https://github.com/cohesity/cohesity-vcd-extension/releases)
+ - [Installation](https://docs.cohesity.com/api/integrations/vcd/plugin-install.htm)
+ - [Documentation](https://docs.cohesity.com/api/integrations/vcd/scope-vcd.htm)
  - [Features](#features)
- - [Documentation](https://docs.cohesity.com/api/integrations/vcd/scope-vcd.htm?tocpath=Cohesity%20Plugin%20for%20VMware%20Cloud%20Director%7C_____0#CohesityPluginforVMwareCloudDirector)
  - [VCD Tutorial](#demo-video)
  - [Suggestions and Feedback](#suggest)
 
