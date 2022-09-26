@@ -28,7 +28,8 @@ This extension integrates natively with vCloud Director HTML UI and makes self-s
 
 ## <a name="demo-video"></a> Tutorial Video :movie_camera:
 
-* <a href="https://www.youtube.com/watch?v=dhaHRrXg4tM">VCD Tutorial </a>
+* <a href="https://www.youtube.com/watch?v=M-TABOiegLw&ab_channel=Cohesity">VCD Tutorial - Installation & Configuration </a>
+* <a href="https://www.youtube.com/watch?v=6fN_SzE_Akg&ab_channel=Cohesity">VCD Tutorial - Data Protection Workflows </a>
 
 ## <a name ="suggest"></a> Questions or Feedback :raised_hand:
 
