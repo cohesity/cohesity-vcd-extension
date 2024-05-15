@@ -33,5 +33,5 @@ This extension integrates natively with vCloud Director HTML UI and makes self-s
 
 ## <a name ="suggest"></a> Questions or Feedback :raised_hand:
 
-We would love to hear from you. Please send your questions and feedback to: *cohesity-api-sdks@cohesity.com*
+We would love to hear from you. Please send your questions and feedback to: *support@cohesity.com*
 
